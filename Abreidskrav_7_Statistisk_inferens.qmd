@@ -1,0 +1,88 @@
+---
+title: "ABK7"
+format: html
+editor: visual
+---
+
+## Arbeidskrav 7: Statistisk inferens
+
+\- Beskriv hvordan vi kan si noe om en populasjon basert på et utvalg ved å bruke p-verdier og konfidensintervaller?
+
+p-verdier kan si oss noe om hvor ofte vi vil se et slikt eller mere ekstremt resultat gitt at nullhypotesen er sann. Det vil si at hvis resultatet er veldig usannsynlig i forhold til nullhypotesen, kan vi anta at det faktisk er en effekt i populasjonen.
+
+Konfidensintervaller kan si oss noe om en populasjon ved å gi oss et estimat på hvor populasjonsverdien befinner seg. Det brukes altså data fra et utvalg til å trekke en slutning om populasjonen.
+
+\- Gi en definisjon av p-verdier.
+
+En p-verdi er sannsynligheten for å få et resultat like ekstremt eller mer ekstremt enn det vi observerte, gitt at nullhypotesen er sann.
+
+\- Definere et konfidensintervall.
+
+Et konfidensintervall er et intervall av verdier som med en bestemt sannsynlighet (ofte 95 %) vil dekke den sanne populasjonsparameteren dersom vi gjentar studien uendelig mange ganger.
+
+\- Når man planlegger en studie ønsker vi å kontrollere type 1 og type 2 feil, beskriv hva disse er og hvordan vi kan kontrollere de.
+
+Type 1 feil er at vi forkaster nullhypotesen når den egentlig er sann. Type 2 feil er når vi beholder nullhypotesen når det faktisk finnes en effekt. Vi kan kontrollere de på to måter: hvis vi gjør alfa mindre reduserer vi sjansen for type 1 feil, øker vi power minsker sannsynligheten for type 2 feil.
+
+\- Hvorfor er det å beregne statistisk styrke i en enkelt studie ikke en god ide?
+
+Fordi power sier oss sannsynligheten for å finne en effekt hvis studien blir repetert uendelig mange ganger, og sier oss dermed lite om akkurat denne enkeltstudien. Power brukes da helst i planleggingsfasen av en studie, og gir oss ingen ny informasjon etter at studien er gjennomført fordi det bare er en omskalering av p-verdien.  
+
+\- Beskriv noen hovedpunkter på forskjeller mellom frekventisme og en Bayesiansk tilnærming til statistisk inferens.
+
+I frekventistisk statistikk tolker vi sannsynlighet på en måte hvor vi tar utgangspunkt i hvor ofte noe vil skje om vi gjentar det uendelig mange ganger. Det sier ikke noe om sannsynligheten for utfallet i akkurat denne studien.
+
+Bayes handler om hvor sannsynlig hypotesen er gitt dataene. Sannsynlighet regnes som et mål på hvor usikre vi er om noe og vi bruker forhåndskunnskap for å si noe om sannsynligheten, altså hva vi allerede vet.
+
+\- Hva er en prior?
+
+En prior er forhåndskunnskap eller forventning om effekten før dataen analyseres.
+
+\- Hva beskriver vi med en «posterior probability distribution»?
+
+Dette er den oppdaterte sannsynligheten etter vi har sett dataen. Den beskriver altså hva vi nå tror er sannsynlig både ut i fra tidligere kunnskap og ny informasjon.
+
+-Bruk data fra Arbeidskrav 3 (strengthvolume) og sett opp en analyse for frekvenstistisk tolkning av forskjell mellom 1 og tre sett. Sett også opp en analyse ved hjelp av en Bayesiansk modell. Beskriv forskjeller i fremgangsmåte og tolkning.
+
+```{r}
+
+library(tidyverse)
+library(exscidata)
+library(BayesFactor)
+
+data(strengthvolume)
+
+dat <- strengthvolume |>
+  filter(include == "incl",
+         exercise == "legpress",
+         time %in% c("pre","post")) |>
+  select(participant, time, sets, load) |>
+  pivot_wider(names_from = time, values_from = load) |>
+  drop_na(pre, post) |>
+  mutate(delta = post - pre,
+         sets = factor(sets))   
+
+```
+
+```{r}
+
+t.test(delta ~ sets, data = dat)
+
+
+```
+
+```{r}
+
+
+# forutsetter at du allerede har laget `dat` som før
+
+x_single   <- dat$delta[dat$sets == "single"]
+y_multiple <- dat$delta[dat$sets == "multiple"]
+
+bf_res <- ttestBF(x = x_single, y = y_multiple)
+bf_res
+
+
+
+
+```
