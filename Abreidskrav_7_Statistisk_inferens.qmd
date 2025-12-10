@@ -1,7 +1,7 @@
 ---
-title: "ABK7"
-format: html
-editor: visual
+title: "Arbeidskrav 7: Statistisk inferens"
+format: html   
+editor: source
 ---
 
 ## Arbeidskrav 7: Statistisk inferens
@@ -45,6 +45,9 @@ Dette er den oppdaterte sannsynligheten etter vi har sett dataen. Den beskriver 
 -Bruk data fra Arbeidskrav 3 (strengthvolume) og sett opp en analyse for frekvenstistisk tolkning av forskjell mellom 1 og tre sett. Sett også opp en analyse ved hjelp av en Bayesiansk modell. Beskriv forskjeller i fremgangsmåte og tolkning.
 
 ```{r}
+#| echo: false
+#| warning: false
+#| message: false
 
 library(tidyverse)
 library(exscidata)
@@ -65,6 +68,9 @@ dat <- strengthvolume |>
 ```
 
 ```{r}
+#| echo: false
+#| warning: false
+#| message: false
 
 t.test(delta ~ sets, data = dat)
 
@@ -72,9 +78,9 @@ t.test(delta ~ sets, data = dat)
 ```
 
 ```{r}
-
-
-# forutsetter at du allerede har laget `dat` som før
+#| echo: false
+#| warning: false
+#| message: false
 
 x_single   <- dat$delta[dat$sets == "single"]
 y_multiple <- dat$delta[dat$sets == "multiple"]
