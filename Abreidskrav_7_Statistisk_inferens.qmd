@@ -1,7 +1,11 @@
 ---
 title: "Arbeidskrav 7: Statistisk inferens"
-format: html   
+author: "Gard, Henrik og Sebastian"
+format: pdf 
 editor: source
+pdf:
+  output-ext: pdf
+  output-file: Arbeidskrav_7_Statistisk_inferens.pdf
 ---
 
 ## Arbeidskrav 7: Statistisk inferens
@@ -42,11 +46,11 @@ En prior er forhåndskunnskap eller forventning om effekten før dataen analyser
 
 Dette er den oppdaterte sannsynligheten etter vi har sett dataen. Den beskriver altså hva vi nå tror er sannsynlig både ut i fra tidligere kunnskap og ny informasjon.
 
--Bruk data fra Arbeidskrav 3 (strengthvolume) og sett opp en analyse for frekvenstistisk tolkning av forskjell mellom 1 og tre sett. Sett også opp en analyse ved hjelp av en Bayesiansk modell. Beskriv forskjeller i fremgangsmåte og tolkning.
+\-Bruk data fra Arbeidskrav 3 (strengthvolume) og sett opp en analyse for frekvenstistisk tolkning av forskjell mellom 1 og tre sett. Sett også opp en analyse ved hjelp av en Bayesiansk modell. Beskriv forskjeller i fremgangsmåte og tolkning.
 
 For å undersøke om tre sett gir større fremgang enn ett sett i leg press, ble endringen i belastning beregnet for hver deltaker (post – pre). Data ble delt i gruppene «single» og «multiple» sett. Gjennomsnittlig fremgang var 86,4 kg i «single» og 97,0 kg i «multiple».
 
-Den frekventistiske analysen ble gjort med en to-utvalgs t-test. Resultatet var t = 1,35, p = 0,18 og 95 % konfidensintervall for gruppedifferansen \[-5,08, 26,41\]. Siden p-verdien er høyere enn 0,05 og konfidensintervallet inkluderer null, finner vi ikke en statistisk signifikant forskjell mellom én og tre sett. Vi kan derfor ikke forkaste nullhypotesen om ingen forskjell i fremgang.
+Den frekventistiske analysen ble gjort med en to-utvalgs t-test. Resultatet var t = 1,35, p = 0,18 og 95 % konfidensintervall for gruppedifferansen \[-5,08, 26,41\]. Siden p-verdien er høyere enn 0,05 og konfidensintervallet inkluderer null, finner vi ikke en statistisk signifikant forskjell mellom ett og tre sett. Vi kan derfor ikke forkaste nullhypotesen om ingen forskjell i fremgang.
 
 Den Bayesianske analysen ble gjort med en Bayes faktor-test, som ga BF = 0,55. Dette betyr at dataene er noe mer sannsynlige hvis det ikke er forskjell mellom gruppene enn hvis det er en reell forskjell. Evidensen er svak, men peker i retning av ingen klar forskjell. I motsetning til p-verdier kan Bayes faktor gi støtte til nullhypotesen, og her er det mer støtte for ingen forskjell enn for en forskjell.
 
