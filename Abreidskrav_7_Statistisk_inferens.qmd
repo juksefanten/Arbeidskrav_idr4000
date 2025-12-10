@@ -8,7 +8,6 @@ pdf:
   output-file: Arbeidskrav_7_Statistisk_inferens.pdf
 ---
 
-## Arbeidskrav 7: Statistisk inferens
 
 \- Beskriv hvordan vi kan si noe om en populasjon basert på et utvalg ved å bruke p-verdier og konfidensintervaller?
 
