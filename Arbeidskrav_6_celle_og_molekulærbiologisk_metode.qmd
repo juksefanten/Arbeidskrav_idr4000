@@ -1,0 +1,13 @@
+---
+title: "Arbeidskrav 6 Celle-/molekulærbiologisk metode"
+author: "Gard, Henrik og Sebastian"
+format: pdf 
+editor: visual
+pdf:
+  output-ext: pdf
+  output-file: Arbeidskrav_7_Statistisk_inferens.pdf
+---
+
+## Hvorfor måler vi Western Blot?
+
+## Resultater
