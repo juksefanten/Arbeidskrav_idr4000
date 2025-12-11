@@ -10,6 +10,10 @@ bibliography: References.bib
 csl: vancouver.csl
 ---
 
-## Hvorfor måler vi Western Blot?
+## Hvorfor og hvordan måler vi Western Blot?
+
+Ribosomal aktivitet og regulering av proteinsyntese er sentrale mekanismer i muskulær tilpasning etter belastning. Baar og Esser viste at fosforylering av proteinet p70S6K korrelerte nesten perfekt med senere økning i muskelmasse (r = 0,998) @baarPhosphorylationP70S6kCorrelates1999. Dette viser hvordan bruk av måleproteiner kan være relevant når man undersøker molekylære effekter av trening. Under laboratoriearbeidet fulgte vi en fast protokoll. Vev ble homogenisert i iskald RIPA-buffer tilsatt protease- og fosfatasehemmere, og supernatanten ble samlet etter sentrifugering (40min på 15 000 g og i 4 grader celsius). Total protein ble kvantifisert med Bradford-metoden i 96-brønns plate, før prøvene ble normalisert i konsentrasjon og separert bed SDS-PAGE (250 V i 50 minutter på is) @bradfordRapidSensitiveMethod1976. Etter separasjon ble proteiner overført til PVDF-membran med "wet transfer" (400 mA, 1 time og 45 minutter i 4 grader celsius), med kontinuerlig buffering og kjøling for å sikre effektiv overføring. Membranene ble blokkert i 5 % melk, inkubert med primær- og sekundærantistoff og utviklet med ECL, før visualisering og kvantivisering i G:box, i tråd med anbefalinger for Western Blot i fyisologisk forskning @burnetteWesternBlottingElectrophoretic1981 @kurienWesternBlotting2006 @aldridgeUseTotalProtein2008.
 
 ## Resultater
+
+## Referanser
