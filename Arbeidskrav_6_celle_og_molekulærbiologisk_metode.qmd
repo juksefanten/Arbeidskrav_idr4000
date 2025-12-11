@@ -5,7 +5,9 @@ format: pdf
 editor: visual
 pdf:
   output-ext: pdf
-  output-file: Arbeidskrav_7_Statistisk_inferens.pdf
+  output-file: Arbeidskrav_6_celle_og_molekulærbiologisk_metode.pdf
+bibliography: References.bib
+csl: vancouver.csl
 ---
 
 ## Hvorfor måler vi Western Blot?
