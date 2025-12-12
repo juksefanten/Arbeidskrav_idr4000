@@ -42,4 +42,22 @@ For UBF-antistoffet ble det ikke observert noen detekterbare bånd. Produsentens
 
 ![](images/clipboard-4180660992.png){width="435"}
 
+# Diskusjon
+
+Western blot-analysen viste vellykket deteksjon av RPL3L og RPS6, mens RPL3 og UBF ikke ga detekterbare signaler.
+
+## RPL3L og RPS6
+
+For RPL3L ble det observert to bånd i stedet for ett. Det ekstra båndet kan skyldes proteinnedbrytning under prøveforberedelsen, selv om vi brukte protease-inhibitorer. RPS6 ga et tydelig bånd ved forventet størrelse, noe som viser at metoden fungerte for dette proteinet.
+
+## RPL3 og UBF
+
+Fraværet av signal for RPL3 og UBF kan ha flere forklaringer. Den mest sannsynlige årsaken er at disse proteinene finnes i lavere mengder i vevsprøvene. Vi lastet \~20 µg total protein per brønn, og dette kan være for lite til å detektere proteiner med lavt uttrykk.
+
+Western blot er en krevende metode med mange trinn hvor ting kan gå galt. Menneskelige feil under proteinekstraksjon, gelelektroforese, transfer, eller antistoffinkubering kan påvirke resultatet. Siden dette var vår første gang med å utføre protokollen, kan manglende erfaring ha bidratt til feil som påvirket resultatene. Antistoffene kan også ha redusert aktivitet hvis de er gamle eller har vært lagret feil. Det er vanskelig å peke på en enkelt årsak til hvorfor RPL3 og UBF ikke ga signal.
+
+# Konklusjon
+
+Resultatene viser at metoden fungerte for RPL3L og RPS6, men ikke for RPL3 og UBF. Med mer erfaring og trening i protokollen kunne resultatene sannsynligvis blitt bedre. For å forbedre resultatene kunne vi også ha lastet mer protein, testet andre antistoffkonsentrasjoner, eller gjentatt forsøket med nye antistoffer.
+
 # Referanser
