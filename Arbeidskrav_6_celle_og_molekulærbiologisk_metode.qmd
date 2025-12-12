@@ -42,7 +42,7 @@ For UBF-antistoffet ble det ikke observert noen detekterbare bånd. Produsentens
 
 ![](images/clipboard-4180660992.png){width="435"}
 
-# Diskusjon
+# Diskusjon 
 
 Western blot-analysen viste vellykket deteksjon av RPL3L og RPS6, mens RPL3 og UBF ikke ga detekterbare signaler.
 
@@ -59,5 +59,7 @@ Western blot er en krevende metode med mange trinn hvor ting kan gå galt. Menne
 # Konklusjon
 
 Resultatene viser at metoden fungerte for RPL3L og RPS6, men ikke for RPL3 og UBF. Med mer erfaring og trening i protokollen kunne resultatene sannsynligvis blitt bedre. For å forbedre resultatene kunne vi også ha lastet mer protein, testet andre antistoffkonsentrasjoner, eller gjentatt forsøket med nye antistoffer.
+
+\newpage
 
 # Referanser
